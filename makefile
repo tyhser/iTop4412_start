@@ -23,6 +23,6 @@ clean:
 
 .PHONY : fush
 fush:
-	sudo dd iflag=dsync oflag=dsync if=E4412_N.bl1.bin of=/dev/sdc seek=1
-	sudo dd if=bl2.bin of=/dev/sdc bs=512 seek=17 iflag=dsync oflag=dsync
+	sudo dd iflag=dsync oflag=dsync if=E4412_N.bl1.bin of=/dev/sdb seek=1
+	sudo dd if=bl2.bin of=/dev/sdb bs=512 seek=17 iflag=dsync oflag=dsync
 	sync
